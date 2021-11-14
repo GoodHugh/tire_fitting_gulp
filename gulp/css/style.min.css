@@ -657,15 +657,6 @@ textarea.input {
   box-shadow: 0 0 0 5px rgba(255, 213, 0, 0.3), 0 0 0 9px rgba(255, 213, 0, 0.1);
 }
 
-.slide_active {
-  width: 202px;
-  height: 175px;
-  background: #ffffff;
-  border: 2px solid rgba(73, 104, 129, 0.1);
-  border-radius: 10px;
-  transition: all 0.5s ease 0s;
-}
-
 .row:after {
   display: block;
   content: "";
