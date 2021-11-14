@@ -32,20 +32,40 @@ const sliderItems = document.querySelectorAll('.page__partners-body-slider-item'
 const sliderBtnNext = document.querySelector('.page__partners-body-slider-next');
 const sliderBtnPrev = document.querySelector('.page__partners-body-slider-prev');
 let length_sliderItems = sliderItems.length;
-let checkClicl = 0;
+let checkClick = 0;
 
+function one_click(){
+    sliderItems.forEach((elem, item) => {
+        if (item < 10) {
+            sliderItems[item].classList.add('slide_active');
+            checkClick++;
+        }
+    })
+}
+one_click();
 
 sliderBtnNext.addEventListener('click', (() => {
-    if (checkClicl >= 10 && checkClicl !=  sliderItems.length) {
-        sliderItems[checkClicl - 10].style.display = 'none';
-        sliderItems[checkClicl].style.display = 'inline-block';
+    if (checkClick >= 10 && checkClick !=  length_sliderItems) {
+        sliderItems[checkClick - 10].classList.remove('slide_active');
+        sliderItems[checkClick].classList.add('slide_active');
     }
-    if (length_sliderItems - checkClicl > 10) {
-            sliderItems[checkClicl].style.display = 'inline-block';
+    if (length_sliderItems - checkClick > 10) {
+            sliderItems[checkClick].classList.add('slide_active');
     }
-    if (checkClicl < sliderItems.length){
-        checkClicl++;
+    if (checkClick < length_sliderItems){
+        checkClick++;
     }
-    console.log(checkClicl);
 }))
-console.log("!!!!");
+
+sliderBtnPrev.addEventListener('click', (() => {
+    if(checkClick > 10){
+        checkClick--;
+    }
+    if (checkClick >= 10) {
+        sliderItems[checkClick - 10].classList.add('slide_active');
+        sliderItems[checkClick].classList.remove('slide_active');
+        
+    }
+}))
+
+
