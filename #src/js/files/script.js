@@ -48,3 +48,4 @@ sliderBtnNext.addEventListener('click', (() => {
     }
     console.log(checkClicl);
 }))
+console.log("!!!!");
