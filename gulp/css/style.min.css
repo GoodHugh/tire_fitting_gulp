@@ -1793,6 +1793,9 @@ body.ie ._ibg img {
 .page__tab-body-button {
   margin: 30px;
 }
+.page__video-container {
+  padding: 45px 0px;
+}
 .page__video-title {
   padding-bottom: 50px;
 }
@@ -1855,6 +1858,13 @@ body.ie ._ibg img {
   padding: 5px 0;
 }
 
+.page__partners-cantainer {
+  padding: 45px 0px;
+  margin-bottom: 150px;
+}
+.page__partners-body-title {
+  padding: 45px 0;
+}
 .page__partners-body-slider {
   overflow: hidden;
 }
@@ -1883,4 +1893,5 @@ body.ie ._ibg img {
 .page__partners-body-slider-button {
   display: flex;
   justify-content: end;
+  padding: 10px;
 }

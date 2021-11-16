@@ -904,6 +904,7 @@ body {
 	}
 	// .page__video-container
 	&__video-container {
+		padding: 45px 0px;
 	}
 	&__video-title {
 		padding-bottom: 50px;
@@ -974,9 +975,14 @@ body {
 	}
 	// .page__partners-cantainer
 	&__partners-cantainer {
+		padding: 45px 0px;
+		margin-bottom: 150px;
 	}
 	// .page__partners-body
 	&__partners-body {
+	}
+	&__partners-body-title{
+		padding: 45px 0;
 	}
 	// .page__partners-body-slider
 	&__partners-body-slider {
@@ -988,7 +994,6 @@ body {
 		position: relative;
 		left: 0;
 		transition: all ease 1s;
-
 	}
 	&__partners-body-slider-wrapp{
 		min-width: 208px;
@@ -1014,6 +1019,7 @@ body {
 	&__partners-body-slider-button {
 		display: flex;
 		justify-content: end;
+		padding: 10px;
 	}
 }
 
