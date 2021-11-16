@@ -1,4 +1,137 @@
-footer {
+.footer {
+    // .footer__wrapper
+    &__wrapper {
+        background-color: #17181c;
+        overflow: hidden;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(../img/Frame-footer.png);
+            background-repeat: no-repeat;
+            top: -163px;
+            left: 492px;
+            width: 100%;
+            height: 466px;
+        }
+    }
+    // .footer__container
+    &__container {
+        position: relative;
+        z-index: 1;
+    }
+    // .footer__first-line
+    &__first-line {
+        margin: 35px 0 25px 0;
+    }
+    // .footer__first-line-body
+    &__first-line-body {
+    }
+    // .footer__first-line-body-menu
+    &__first-line-body-menu {
+        display: flex;
+        justify-content: space-between;
+        flex: 1 1 auto;
+        padding: 20px 0;
+    }
+    // .footer__first-line-body-menu-logo
+    &__first-line-body-menu-logo {
+    }
+    // .footer__first-line-body-menu-logo-link
+    &__first-line-body-menu-logo-link {
+    }
+    // .footer__first-line-body-menu-menu
+    &__first-line-body-menu-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        flex: 0 1 396px;
+    }
+    // .footer__first-line-body-menu-telephone
+    &__first-line-body-menu-telephone{
+        display: flex;
+        align-items: end;
+    }
+    &__first-line-body-menu-telephone-action{
+        display: flex;
+        align-items: center;
+    }
+    &__first-line-body-menu-telephone-action-icon{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        color: #ffd300;
+        padding: 0 15px;
+    }
+    // .footer__first-line-body-menu-telephone-link
+    &__first-line-body-menu-telephone-action-link {
+        font-family: $fontFamily;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        color: #ffd300;
+    }
+    // .footer__first-line-body-social
+    &__first-line-body-social {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    // .footer__first-line-body-social-avito
+    &__first-line-body-social-avito {
+    }
+    // .footer__first-line-body-social-insta
+    &__first-line-body-social-insta {
+        font-size: 22px;
+        color: #ffffff;
+        margin-right: 30px;
+    }
+    // .footer__first-line-body-social-butoon
+    &__first-line-body-social-butoon {
+    }
+    // .footer__first-line-body-social-butoon-link
+    &__first-line-body-social-butoon-link {
+        display: inline-block;
+        padding: 20px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        color: #ffd200;
+        border: 1px solid #ffd200;
+        border-radius: 5px;
+        transition: all 0.5s ease 0s;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            background: #ffd0003a;
+            width: 0;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease 0s;
+        }
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+    // .footer__second-line
+    &__second-line {
+    }
+    // .footer__second-line-copy
+    &__second-line-copy {
+        font-family: $fontFamily;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        color: #ffffff;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        padding: 15px 0;
+    }
 }
 //====================================================================================================
 
