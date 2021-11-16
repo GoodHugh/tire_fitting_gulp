@@ -46,7 +46,7 @@ btn_next.addEventListener('click', (() => {
         slider_length += slidewidth.width;
         slideItems.style.left = -slider_length + "px";
     } else slider_length += slidewidth.width;
-    if(slider_length > calcslidewidth){
+    if (slider_length > calcslidewidth) {
         slideItems.style.left = 0 + "px";
         slider_length = 0;
     }
@@ -58,3 +58,22 @@ btn_prev.addEventListener('click', (() => {
         slideItems.style.left = -slider_length + "px";
     }
 }))
+
+//=====================================================================================
+//плавная прокрутка
+
+document.querySelectorAll('.menu-header__link').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const menu_href = this.getAttribute('href').substring(1);
+        const scroll_block = document.getElementById(menu_href);
+        const topScroll = 0;
+        const elemPosition = scroll_block.getBoundingClientRect().top;
+        const offsetPosition = elemPosition - topScroll;
+        window.scrollBy({
+            top: offsetPosition,
+            behavior: 'smooth',
+        })
+    })
+})
+//=====================================================================================

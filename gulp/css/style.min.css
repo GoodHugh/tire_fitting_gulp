@@ -1263,6 +1263,23 @@ body.ie ._ibg img {
   padding: 15px 0;
 }
 
+.menu-footer__icon {
+  width: 100%;
+}
+.menu-footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-footer__link {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
 .page {
   flex: 1 1 auto;
 }
