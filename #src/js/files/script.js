@@ -77,3 +77,25 @@ document.querySelectorAll('.menu-header__link').forEach(link => {
     })
 })
 //=====================================================================================
+
+//запуск видео
+const colections_video = document.querySelectorAll('.page__video-body-items-video');
+document.querySelectorAll('.page__video-body-items-poster').forEach(function(elem, item) {
+    elem.addEventListener('click', function(){
+        this.classList.add('active');
+        colections_video[item].setAttribute('controls','');
+        colections_video[item].play(); 
+    })
+})
+
+colections_video.forEach(function(elem, item){
+    elem.addEventListener('click', () => {
+        colections_video[item].pause();
+        colections_video[item].currentTime = 0;
+        colections_video[item].removeAttribute('controls','');
+        document.querySelectorAll('.page__video-body-items-poster')[item].classList.remove('active');
+    })
+})
+
+
+

@@ -18,36 +18,38 @@
 }
 
 @font-face {
-	font-family: 'icon';
-	src:  url('../fonts/icon.eot?gi2eza');
-	src:  url('../fonts/icon.eot?gi2eza#iefix') format('embedded-opentype'),
-	  url('../fonts/icon.ttf?gi2eza') format('truetype'),
-	  url('../fonts/icon.woff?gi2eza') format('woff'),
-	  url('../fonts/icon.svg?gi2eza#icon') format('svg');
+	font-family: "icon-svg";
+	src: url("../fonts/icon.eot?gqbyux");
+	src: url("../fonts/icon.eot?gqbyux#iefix") format("embedded-opentype"),
+		url("../fonts/icon.ttf?gqbyux") format("truetype"), url("../fonts/icon.woff?gqbyux") format("woff"),
+		url("../fonts/icon.svg?gqbyux#icon") format("svg");
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
-  }
-  
-  [class^="_icon"]::before, 
-  [class*="_icon"]::before {
+}
+
+[class^="_icon-"]::before,
+[class*=" _icon-"]::before {
 	/* use !important to prevent issues with browser extensions that change fonts */
-	font-family: 'icon' !important;
+	font-family: "icon-svg" !important;
 	speak: never;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-  
+
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-  }
-  
-  ._icon-insta:before {
+}
+
+._icon-insta:before {
 	content: "\e900";
-  }
-  ._icon-teleph:before {
+}
+._icon-polygon:before {
 	content: "\e901";
-  }
+}
+._icon-teleph:before {
+	content: "\e902";
+}

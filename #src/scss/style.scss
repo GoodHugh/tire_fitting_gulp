@@ -201,6 +201,7 @@ body {
 		line-height: 41px;
 		color: $mainColor;
 		position: relative;
+		z-index: 1;
 		padding-bottom: 20px;
 		margin-bottom: 18px;
 		&::before {
@@ -937,12 +938,61 @@ body {
 		height: 100%;
 		margin: 15px 0;
 	}
+	// .page__video-body-items-poster
+	&__video-body-items-poster {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #C4C4C4;
+		border-radius: 5px;
+		z-index: 1;
+		cursor: pointer;
+		opacity: 100%;
+		transition: all 1s linear 0s;
+	}
+	&__video-body-items-poster.active{
+		transition: all 1s linear 0s;
+		z-index: 0;
+		cursor: pointer;
+		opacity: 0;
+	}
+	// .page__video-body-items-poster-circle
+	&__video-body-items-poster-circle {
+		position: absolute;
+		top: 0; 
+		left: 0; 
+		bottom: 0; 
+		right: 0;
+		width: 60px;
+		height: 60px;
+		margin: auto;
+		border: 2px solid #FFD200;
+		border-radius: 50%;
+	}
+	// .page__video-body-items-poster-play
+	&__video-body-items-poster-play {
+		position: absolute;
+		top: 0; 
+		left: 0; 
+		bottom: 0; 
+		right: 0;
+		width: 36px;
+		height: 36px;
+		margin: auto;
+	}
+	&__video-body-items-poster-play-icon{
+		font-size: 22px;
+		color: #FFD300;
+		padding: 7px 6px 7px 10px;
+	}
 	&__video-body-items-video {
 		position: absolute;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		border-radius: 5px;
+		border-radius: 7px;
 	}
 	// .page__video-body-title
 	&__video-body-title {
@@ -980,7 +1030,7 @@ body {
 	// .page__partners-body
 	&__partners-body {
 	}
-	&__partners-body-title{
+	&__partners-body-title {
 		padding: 45px 0;
 	}
 	// .page__partners-body-slider
@@ -994,7 +1044,7 @@ body {
 		left: 0;
 		transition: all ease 1s;
 	}
-	&__partners-body-slider-wrapp{
+	&__partners-body-slider-wrapp {
 		min-width: 208px;
 	}
 	// .page__partners-body-slider-item
@@ -1012,7 +1062,7 @@ body {
 		border-radius: 10px;
 	}
 	// .page__partners-body-slider-item-img
-	&__partners-body-slider-item-img {	
+	&__partners-body-slider-item-img {
 	}
 	// .page__partners-body-slider-button
 	&__partners-body-slider-button {
