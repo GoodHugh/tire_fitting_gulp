@@ -177,7 +177,7 @@ body._lock {
 @media (max-width: 767.98px) {
   ._container {
     max-width: none;
-    padding: 0 10px;
+    padding: 0 25px;
   }
 }
 
@@ -514,8 +514,8 @@ textarea.input {
 
 ._logo {
   display: inline-block;
-  width: 176px;
-  height: 86px;
+  width: calc(86px + 90 * ((100vw - 320px) / 1600));
+  height: calc(66px + 20 * ((100vw - 320px) / 1600));
   background-image: url(../img/Logo.png);
   background-repeat: no-repeat;
 }
@@ -1012,7 +1012,7 @@ body.ie ._ibg img {
 
 .header__wrapper {
   position: relative;
-  height: 860px;
+  height: calc(565px + 285 * ((100vw - 320px) / 1600));
 }
 .header__img-bg {
   position: absolute;
@@ -1032,52 +1032,57 @@ body.ie ._ibg img {
   opacity: 0.6;
 }
 .header__container {
-  display: flex;
+  width: 100%;
   z-index: 10;
 }
 .header__main {
   position: relative;
 }
 .header__menu {
-  position: fixed;
   display: flex;
-  width: 1060px;
   align-items: end;
   padding-top: 16px;
+}
+.header__menu-logo-link {
+  display: inline-block;
+  width: calc(86px + 90 * ((100vw - 320px) / 1600));
+  height: calc(66px + 20 * ((100vw - 320px) / 1600));
+}
+.header__menu-logo-link-svg {
+  width: 100%;
+  height: 100%;
 }
 .header__menu-list {
   display: flex;
 }
 .header__content {
-  display: flex;
   width: 100%;
   height: 100%;
-  flex-direction: column;
-  align-items: start;
 }
 .header__content-title {
-  display: flex;
   font-family: "Manrope";
   font-weight: 800;
   font-style: normal;
-  font-size: 64px;
+  font-size: calc(28px + 36 * ((100vw - 320px) / 1600));
   text-transform: uppercase;
-  line-height: 125%;
+  line-height: calc(45px + 40 * ((100vw - 320px) / 1600));
   color: #ffffff;
-  margin-top: 185px;
-  margin-bottom: 41px;
+  margin-top: 100px;
+  margin-bottom: calc(5px + 36 * ((100vw - 320px) / 1600));
 }
 .header__content-text {
   margin-bottom: 72px;
+  display: flex;
 }
 .header__text-text {
-  width: 100%;
+  display: block;
   font-family: Manrope;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: calc(16px + 2 * ((100vw - 320px) / 1600));
   line-height: 25px;
   color: #ffffff;
+  flex: 0 1 540px;
 }
 .header__button-link {
   position: relative;
@@ -1377,7 +1382,6 @@ body.ie ._ibg img {
   line-height: 41px;
   color: #000;
   position: relative;
-  z-index: 1;
   padding-bottom: 20px;
   margin-bottom: 18px;
 }

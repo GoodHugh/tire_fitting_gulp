@@ -1,8 +1,8 @@
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 ._logo {
 	display: inline-block;
-	width: 176px;
-	height: 86px;
+	@include adaptiv-value ("width", 176, 86, 0);
+	@include adaptiv-value ("height", 86, 66, 0);
 	background-image: url(../img/Logo.png);
 	background-repeat: no-repeat;
 }
