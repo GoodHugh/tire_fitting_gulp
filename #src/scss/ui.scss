@@ -7,13 +7,16 @@
 	background-repeat: no-repeat;
 }
 ._btn-yellow {
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	width: 255px;
+	height: 66px;
 	font-family: $fontFamily;
 	font-size: 16px;
 	font-weight: 700;
 	color: $mainColor;
 	background-color: #ffd200;
-	padding: 22px 50px;
+	// padding: 21px 21px;
 	border-radius: 5px;
 	position: relative;
 	top: 0;
